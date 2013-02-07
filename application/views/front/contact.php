@@ -26,19 +26,27 @@
 	   <!-- Paragraph --> 
        <div class="eleven columns alpha">
  
-        
+      <?php 
+
+        if($this->session->flashdata('log'))
+        {echo '<h3>'.$this->session->flashdata('log').'</h3>'; }
+
+      ?>
       <section class="leave-comment"><!-- Comments form -->
       <div class="message"><div id="alert"></div></div>
-      <form action="contact/sendmail.php" method="post" id="contactForm">
+      <form action="<?php echo base_url();?>dashboard/contact" method="post" id="contactForm">
         <ul class="form">
         <li>
           <input type="text" name="name" value="" id="name" placeholder="Enter your name..." />
+          <?php echo form_error('name');?>
         </li>
         <li>
           <input type="text" name="email" value="" id="email" placeholder="Enter your e-mail.."/>
+          <?php echo form_error('email');?>
         </li>
         <li>
-          <textarea rows="7" style="width:80%;" name="message" placeholder="Enter your message..."></textarea>
+          <textarea rows="7" style="width:80%;" name="msg" placeholder="Enter your message..."></textarea>
+          <?php echo form_error('msg');?>
         </li>
         <li class="submitbutton">
           <input type="submit" value="Send message" id="submit" />
@@ -50,12 +58,6 @@
      
      <div class="five columns omega contact">
      <h4 class="add-bottom">Contact Info</h4>
-
-      <p>
-        Envato Melbourne, <br />
-        Little Lonsdale St, Melbourne  <br />
-        Rutrum faucibus road <br /> 
-      </p>
       
         <ul>
           <li><span class="icon" data-icon="&#x0040;"></span> +381 11 27740 318</li>

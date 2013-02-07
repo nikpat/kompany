@@ -2,6 +2,14 @@
 
 class Dashboard extends CI_Controller {
 
+    function __construct()
+    {
+        parent::__construct();
+		$this->load->helper(array('form'));
+		$this->load->library('form_validation');
+    }
+
+
 	public function index()
 	{
 		
@@ -15,9 +23,22 @@ class Dashboard extends CI_Controller {
 	}
 
 	public function contact()
-	{
-		
-		$this->load->view('front/contact');
+	{		
+		$this->form_validation->set_rules('name', 'Your Name', 'trim|required|xss_clean');
+		$this->form_validation->set_rules('msg', 'Message', 'trim|required');
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+			if($this->form_validation->run() != FALSE)
+        	{
+					$userData = array();
+			        $userData["name"] = $_POST['name'];
+			        $userData["email"] = $_POST['email'];
+			        $userData["msg"] = $_POST['msg'];
+
+			        $this->db->insert("contact", $userData);
+			        $this->session->set_flashdata("log", "Thanks ,We will contact you soon...");
+			        redirect('dashboard/contact');
+				}
+			$this->load->view('front/contact');
 	}
 
 	public function blog()
