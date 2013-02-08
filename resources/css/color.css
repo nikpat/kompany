@@ -298,7 +298,7 @@ input[type="button"]:active {
 
 .main-heading .container {
     background: #a70000;
-    padding: 22px 40px 10px 40px;
+    /*padding: 22px 40px 10px 40px;*/
     color: #fff;
     font-size: 12px;
 }

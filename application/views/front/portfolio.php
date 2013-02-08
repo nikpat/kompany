@@ -10,22 +10,20 @@
         
        </div>
       </section>
-    </section>
-
-    
+    </section>  
 <div class="container wrap"><!-- Container starts -->  
    <section class="portfolio sixteen columns padding-40px"><!-- Portfolio starts -->
    <div class="row remove-bottom">
    
      <article class="project eight columns alpha add-bottom"><!-- Project #1 starts -->
-        <a href="http://www.youtube.com/watch?v=0j8tMUcqaoA" data-rel="prettyPhoto" title="Project Description goes here"><img src="<?php echo base_url()?>resources/images/preview/Image-01.png" alt="Project Name goes here" class="border scale-with-grid remove-bottom" /></a>
+        <a href="javascript:void(onclick=function(){alert('test')})" data-rel="prettyPhoto" title="Project Description goes here"><img src="<?php echo base_url()?>resources/images/preview/Image-01.png" alt="Project Name goes here" class="border scale-with-grid remove-bottom" /></a>
       <div class="project-details">
        <div class="visible">
-         <h6 class="remove-bottom">Project #3</h6>
-         <p>Illustration</p>
+         <h6 class="remove-bottom">spiffcity</h6>
+         <p>Social currently model</p>
        </div>
        <div class="mask">
-         <a href="portfolio-item-single.php"><span class="icon" data-icon="&#xe020;"></span></a>
+         <a href="<?php echo base_url();?>"><span class="icon" data-icon="&#xe020;"></span></a>
       </div>
       </div>
      </article><!-- Project #1 ends -->

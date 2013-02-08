@@ -43,8 +43,11 @@ class Dashboard extends CI_Controller {
 
 	public function blog()
 	{
-		
-		$this->load->view('front/blog');
+		$this->db->select('blog.*,user.*',false);
+		$this->db->from('user');
+		$this->db->join('blog','user.id = blog.user_id');
+		$data['blogs'] = $this->db->get()->result_array();
+		$this->load->view('front/blog',$data);
 	}
 
 	public function portfolio()
