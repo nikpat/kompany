@@ -27,7 +27,7 @@
 <?php echo load_css("plugins/flexslider.css"); ?>
 <?php echo load_css("plugins/prettyPhoto.css"); ?>
 <?php echo load_css("plugins/jquery.tweet.css"); ?>
-  
+<?php echo load_css("styleswitch.css"); ?>
 
     
 <!--[if lt IE 9]>
@@ -46,7 +46,7 @@
 
 <!-- Style Switcher
 ================================================== -->
-<link rel="stylesheet" href="../styleswitch.css"><!-- Styleswitch CSS-->
+
 
 
 

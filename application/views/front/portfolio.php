@@ -16,7 +16,7 @@
    <div class="row remove-bottom">
    
      <article class="project eight columns alpha add-bottom"><!-- Project #1 starts -->
-        <a href="javascript:void(onclick=function(){alert('test')})" data-rel="prettyPhoto" title="Project Description goes here"><img src="<?php echo base_url()?>resources/images/preview/Image-01.png" alt="Project Name goes here" class="border scale-with-grid remove-bottom" /></a>
+        <a href="javascript:void(0)" data-rel="prettyPhoto" title="Project Description goes here"><img src="<?php echo base_url()?>resources/images/preview/Image-01.png" alt="Project Name goes here" class="border scale-with-grid remove-bottom" /></a>
       <div class="project-details">
        <div class="visible">
          <h6 class="remove-bottom">spiffcity</h6>
@@ -99,25 +99,6 @@
      
      <!-- Row -->  
      
-   <div class="clear"></div> 
-   
-      <nav id="pagination" class="add-bottom"><!-- Pagination starts-->
-        <ul>
-          <li><a href="#">Previous</a></li>
-          <li><a class="active" href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">Next</a></li>
-        </ul>
-    </nav><!-- Pagination ends-->
-     
-   </div>
-   </section> <!-- Portfolio section ends starts -->
 
-<br class="clear" />    <!-- Arrow image that appears before footer-->
-    <section class="arrow">
-      <img src="<?php echo base_url()?>resources/images/arrow.png" alt="Footer" />
-    </section>
 
 </div><!-- Main content container ends here -->

@@ -32,6 +32,7 @@
         {echo '<h3>'.$this->session->flashdata('log').'</h3>'; }
 
       ?>
+      
       <section class="leave-comment"><!-- Comments form -->
       <div class="message"><div id="alert"></div></div>
       <form action="<?php echo base_url();?>dashboard/contact" method="post" id="contactForm">
