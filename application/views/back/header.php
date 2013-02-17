@@ -45,9 +45,15 @@
         <div id="sidebar">
             <ul>
                 <li <?php echo $tab == 'dashboard' ? "class='current hover'" : '' ?>>
-                    <a href="/">
+                    <a href="<?php echo base_url();?>admin/blog" >
                         <img src="<?php echo base_url();?>resources/images/icons/menu/inbox.png" alt="" />
                         Dashboard
+                    </a>
+                </li>
+                <li <?php echo $tab == 'user' ? "class='current hover'" : '' ?>>
+                    <a href="<?php echo base_url();?>admin/users" >
+                        <img src="<?php echo base_url();?>resources/images/icons/menu/inbox.png" alt="" />
+                        users
                     </a>
                 </li>
                 <li <?php echo $tab == 'blog' ? "class='current hover'" : '' ?>>
