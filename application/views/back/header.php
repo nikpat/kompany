@@ -50,7 +50,7 @@
                         Dashboard
                     </a>
                 </li>
-                <li <?php echo $tab == 'user' ? "class='current hover'" : '' ?>>
+                <li <?php echo $tab == 'users' ? "class='current hover'" : '' ?>>
                     <a href="<?php echo base_url();?>admin/users" >
                         <img src="<?php echo base_url();?>resources/images/icons/menu/inbox.png" alt="" />
                         users

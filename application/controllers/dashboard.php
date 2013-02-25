@@ -16,10 +16,10 @@ class Dashboard extends CI_Controller {
 		$this->load->view('front/dashboard');
 	}
 
-		public function about()
+	public function about()
 	{
-		
-		$this->load->view('front/about');
+		$data['info'] = $this->db->get('about')->row_array();	
+		$this->load->view('front/about',$data);
 	}
 
 	public function contact()
