@@ -9,7 +9,7 @@
 	        Insert Portfolio
 	    </div>
 	    <div class="content dashboard">
-		    <form method="post" action="<?php echo base_url().'admin/users'?>">
+		    <form method="post" action="<?php echo base_url().'admin/portfolio'?>">
 		    	<table>
 		    	<tr>
 		    		<th>Title </th>

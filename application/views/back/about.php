@@ -11,7 +11,7 @@
 	    <div class="content dashboard">
 		    <form method="POST" action="<?php echo base_url();?>admin/about">
 		    About:<br>
-		    <textarea name="about" rows="15" cols="90"><?php echo $info['about'] ?></textarea><br>
+		    <textarea name="about" rows="15" cols="90"><?php echo $info['about'];?></textarea><br>
 		    <input class="button" type="submit" value="Submit">
 		    </form>	       
 	    </div>
